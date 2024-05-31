@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 152, 0));
+  overflow-x: hidden;
+}
+.text {
+  position: relative;
+  top: 14rem;
+  font-weight: 600;
+  font-size: 1.9rem;
+  left: 10rem;
+}
+.admin {
+  width: 495px;
+  padding: 28px 19px 15px 50px;
+  height: 75vh;
+  border-radius: 14% 0% 13% 17% / 51% 25% 0% 49%;
+  background: #f8f8f8;
+  position: relative;
+  top: 2rem;
+  left: 50%;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -9px 2px 15px -10px rgba(0, 0, 0, 0);
+}
+.admin-register {
+  margin: 7px 8px 4px 8px;
+  padding: 12px 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 48vh;
+}
+form {
+  position: relative;
+  padding: 4px;
+  width: 489px;
+  height: 15vh;
+  margin: auto;
+}
+.xyz{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 2%;
+}
+.btn {
+  font-weight: 600;
+  width: 200px;
+  position: relative;
+  background: #ff9402;
+}
+.button {
+  flex-direction: row;
+  gap: inherit;
+  position: relative;
+  text-align: center;
+  left: 10px;
+}
+
+/* Admin Home*/
+.admin-image {
+  position: relative;
+  top: 2rem;
+  width: 477px;
+  margin: auto;
+}
+.name {
+  position: relative;
+  left: 10%;
+}
+.logout-button {
+  position: absolute;
+  top: 31px;
+  right: 3%;
+  width: auto;
+}
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.input-search {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-opt {
+  width: auto;
+  color: red;
+  text-align: center;
+  background: bisque;
+  cursor: pointer;
+}
+.select-opt:hover {
+  color: rgb(126, 203, 43);
+  background: rgb(240, 239, 238);
+}

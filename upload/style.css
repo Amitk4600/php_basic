@@ -1,0 +1,23 @@
+
+
+.upload_img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.upload {
+    width: 16rem;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 12px;
+}
+.btn{
+    width: 16rem;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #6499E9;
+
+}

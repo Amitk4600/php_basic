@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e26d5a, #efa8b8);
+}
+.registration {
+  background-color: #f8f8f8;
+  max-width: 550px;
+  height: 98vh;
+  margin: auto;
+  background: linear-gradient(to bottom, #e26d5a, #efa8b8);
+}
+.registration-form {
+  height: 100%;
+  border-radius: 0% 34% 0% 39% / 0% 34% 1% 40%;
+  background: linear-gradient(to bottom right, #d7bba8, #d7bba8, #3e2a35);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+input:focus {
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
