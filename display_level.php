@@ -84,6 +84,7 @@ $inactive_count = $row_inactive_count['inactive_count'];
         <table class="table table-striped">
             <thead>
                 <tr>
+                    <th scope="col">ID</th>
                     <th scope="col">User ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
@@ -92,9 +93,11 @@ $inactive_count = $row_inactive_count['inactive_count'];
                     <th scope='col'>active/inactive</th>
                 </tr>
             </thead>
+            <?php $count =1; ?>
             <tbody>
                 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr>
+                        <td><?php echo $count++ ?></td>
                         <td><?php echo $row['user_id']; ?></td>
                         <td><?php echo $row['names']; ?></td>
                         <td><?php echo $row['email']; ?></td>

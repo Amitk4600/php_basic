@@ -140,7 +140,7 @@ if (isset($_POST['submit'])) {
                         $bonus = $referralBonuses[$level];
                         updateReferralBonus($level, $referrerUserId, $newUserId, $bonus, $conn);
 
-                        if ($level < 10) {
+                        if ($level < 20) {
                             processReferralLevel($level + 1, $rowReferral['joining_referral'], $newUserId, $conn);
                         }
                     }

@@ -53,6 +53,7 @@ if ($num > 0) {
         if ($nums > 0) {
             echo "<table class='table table-success table-striped'>
                 <tr>
+                <th scope='col'>id</th>
                 <th scope='col'>user_id</th>
                 <th scope='col'>name</th>
                 <th scope='col'>email</th>
@@ -60,7 +61,7 @@ if ($num > 0) {
                 <th scope='col'>Type</th>
                 <th scope='col'>active/inactive</th>
                 </tr>";
-
+            $cont = 1;
             while ($row = mysqli_fetch_assoc($result)) {
                 $level = '';
                 if (strpos($level1, $row['user_id']) !== false) {
@@ -76,7 +77,8 @@ if ($num > 0) {
                 }
 
                 echo "<tr class='table-info'> 
-                    <td>" . $row['user_id'] . "</td>                        
+                <td class='fw-bold fs-2'>" . $cont++ . "</td>
+                    <td class='fw-bold fs-2'>" . $row['user_id'] . "</td>                        
                     <td class='fw-bold fs-2'>" . $row['names'] . "</td>
                     <td class='fw-bold fs-2'>" . $row['email'] . "</td>
                     <td class='fw-bold fs-2'>" . $row['mobile'] . "</td>
@@ -127,6 +129,7 @@ if ($num > 0) {
             font-weight: 700;
             margin-bottom: 20px;
         }
+
         .button {
             display: flex;
             flex-direction: row;
