@@ -47,7 +47,7 @@ include "./login/fetchdata.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <title>Document</title>
@@ -66,6 +66,12 @@ include "./login/fetchdata.php";
             top: 1rem;
             justify-content: space-around;
         }
+
+        .text {
+            position: absolute;
+            top: 63px;
+            width: 88rem;
+        }
     </style>
 </head>
 
@@ -81,7 +87,11 @@ include "./login/fetchdata.php";
         <a href="./wallet.php"><button type="button" class="btn btn-outline-success" name="member">History</button></a>
         <a href="./send_request.php"><button type="button" class="btn btn-outline-dark" name="member">Request</button></a>
         <a href="./total_member.php"><button type="button" class="btn btn-outline-danger" name="total_member">Total Member</button></a>
+        <button type="button" class="btn btn-outline-info" name="total_member" onclick="activeMember()">Active Member</button>
+        <button type="button" class="btn btn-outline-secondary" name="total_member" onclick="inactiveMember()">Inactive Member</button>
+        <div class="text"></div>
 
+        <script src="./Js/userFilter.js"></script>
     </div>
 </body>
 
