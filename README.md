@@ -19,3 +19,4 @@ ALL working
 # add user block and unblock also referral code BY AJAX
 # display active and inactive level wise at user end 
 # display total active and inactive level wise at user end 
+# optimization level wise at user end 

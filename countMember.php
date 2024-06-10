@@ -69,6 +69,7 @@ echo " inactive members: " . $totalInactiveMembers . "<br>";
     <title>Document</title>
 </head>
 <body>
-    <a href="./Level_member.php">Level member</a>
+    <a href="./Level_member.php">Level member</a><br>
+    <a href="./optimization.php">Level member optimize</a>
 </body>
 </html>
